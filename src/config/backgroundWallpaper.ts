@@ -2,11 +2,7 @@ import type { BackgroundWallpaperConfig } from "@/types/backgroundWallpaper";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"fullscreen" 全屏壁纸，"overlay" 覆盖透明，"none" 纯色背景无壁纸
-<<<<<<< HEAD
 	mode: "fullscreen",
-=======
-	mode: "banner",
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	// 是否启用背景视频播放，配置后将在导航栏显示视频播放按钮
 	playerEnable: true,
 	/**
@@ -43,30 +39,12 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-<<<<<<< HEAD
 			"assets/images/background.jpg",
-=======
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		],
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
 		mobile: [
-<<<<<<< HEAD
 			"assets/images/movepicture.jpg",
-=======
-			"assets/images/MobileWallpaper/m1.avif",
-			"assets/images/MobileWallpaper/m2.avif",
-			"assets/images/MobileWallpaper/m3.avif",
-			"assets/images/MobileWallpaper/m4.avif",
-			"assets/images/MobileWallpaper/m5.avif",
-			"assets/images/MobileWallpaper/m6.avif",
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		],
 		// 背景视频播放地址
 		// 支持单个视频路径（字符串）或多个视频循环（数组，参考上面壁纸配置）
@@ -77,11 +55,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 横幅壁纸和全屏壁纸共享配置
 	common: {
 		// 壁纸遮罩暗度，让横幅文字显示更清晰，0-1之间，值越大越暗
-<<<<<<< HEAD
 		dimOpacity: 0.1,
-=======
-		dimOpacity: 0.2,
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		// 多视频播放模式："order" 顺序循环，"random" 随机切换（仅当 playerUrl 为数组时生效）
 		playerMode: "random",
 		// 主页横幅文字
@@ -89,15 +63,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否启用主页横幅文字
 			enable: true,
 			// 主页横幅主标题
-<<<<<<< HEAD
 			title: "Goodnight(*^ω^*)",
 			// 主页横幅主标题字体大小
 			titleSize: "3.5rem",
-=======
-			title: "Lovely firefly!",
-			// 主页横幅主标题字体大小
-			titleSize: "4.5rem",
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 			// 主页横幅副标题
 			subtitle: [
 				"In Reddened Chrysalis, I Once Rest",
@@ -192,17 +160,10 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 导航栏配置
 		navbar: {
 			// 导航栏透明模式："semi" 半透明，"semifull" 动态透明，"none" 纯色不透明
-<<<<<<< HEAD
 			transparentMode: "semifull",
 			// 毛玻璃模糊度，0 即关闭导航栏的毛玻璃
 			// 注意：导航栏子菜单与浮动面板始终保留毛玻璃，模糊度跟随此项但有最小值
 			blur: 0,
-=======
-			transparentMode: "semi",
-			// 毛玻璃模糊度，0 即关闭导航栏的毛玻璃
-			// 注意：导航栏子菜单与浮动面板始终保留毛玻璃，模糊度跟随此项但有最小值
-			blur: 12,
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		},
 	},
 	// 覆盖透明覆盖模式特有配置
@@ -210,19 +171,11 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 层级，确保壁纸在背景层
 		zIndex: -1,
 		// 壁纸透明度
-<<<<<<< HEAD
 		opacity: 0,
 		// 背景模糊度
 		blur: 0,
 		// 卡片透明度，0-1之间，值越小越透明
 		cardOpacity: 0,
-=======
-		opacity: 0.8,
-		// 背景模糊度
-		blur: 10,
-		// 卡片透明度，0-1之间，值越小越透明
-		cardOpacity: 0.6,
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	},
 	// 全屏壁纸模式特有配置
 	// 壁纸模糊度(blur)、卡片透明度(cardOpacity)、层级(zIndex) 复用上方 overlay 模式的配置；
@@ -237,22 +190,14 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 导航栏透明模式："semi" 半透明，"semifull" 动态透明（仅首页顶部透明、下滑玻璃化；非首页均跟卡片半透明）
 			transparentMode: "semifull",
 			// 导航栏毛玻璃模糊度，0 即关闭（玻璃态生效）
-<<<<<<< HEAD
 			blur: 0,
-=======
-			blur: 12,
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		},
 		// 首页下滑时壁纸模糊渐变开关（从 0 渐变为 overlay.blur 的最大模糊）
 		// 关闭后该设备上全屏壁纸保持清晰（首页与非首页都不模糊），设置面板的模糊度滑块也会隐藏
 		blurRamp: {
 			enable: {
 				// 桌面端是否启用模糊渐变
-<<<<<<< HEAD
 				desktop: false,
-=======
-				desktop: true,
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 				// 移动端是否启用模糊渐变
 				mobile: true,
 			},

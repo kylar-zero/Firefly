@@ -336,24 +336,16 @@ html.is-page-transitioning .banner-home-text-overlay {
     font-size: min(var(--banner-title-size, 3rem), 10vw);
     /* 独立字体设置，通过 fontConfig.bannerTitleFont 配置 */
     font-family: var(--font-banner-title, inherit);
-<<<<<<< HEAD
     -webkit-font-smoothing: none;
-=======
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 }
 
 .banner-subtitle {
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
     /* 独立字体设置，通过 fontConfig.bannerSubtitleFont 配置 */
     font-family: var(--font-banner-subtitle, inherit);
-<<<<<<< HEAD
     -webkit-font-smoothing: none;
     font-size: 24px;
-=======
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 }
-
-/* 首页横幅标题下方的链接图标行（半透明圆按钮） */
 .banner-links {
     animation: banner-fadeInUp 0.3s ease-out 0.5s both;
 }

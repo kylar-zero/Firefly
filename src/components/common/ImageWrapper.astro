@@ -18,10 +18,7 @@ interface Props {
 	class?: string;
 	alt?: string;
 	position?: string;
-<<<<<<< HEAD
 	objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
-=======
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	basePath?: string;
 	loading?: "lazy" | "eager";
 	fetchpriority?: "high" | "low" | "auto";
@@ -45,10 +42,7 @@ const {
 	src,
 	alt,
 	position = "center",
-<<<<<<< HEAD
 	objectFit = "cover",
-=======
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	basePath = "/",
 	loading = "lazy",
 	fetchpriority = "auto",
@@ -101,15 +95,9 @@ if (isLocal) {
 }
 
 const imageClass = fadeIn
-<<<<<<< HEAD
 	? "w-full h-full opacity-0 transition-opacity duration-500 ease-out"
 	: "w-full h-full";
 const imageStyle = `object-position: ${position}; object-fit: ${objectFit}`;
-=======
-	? "w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-out"
-	: "w-full h-full object-cover";
-const imageStyle = `object-position: ${position}`;
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 
 // 检查是否需要添加 referrerpolicy（仅对非本地图片）
 const fullSrc = isPublic ? url(src) : src;

@@ -39,11 +39,7 @@ const navbarTransparentMode =
 					const fs =
 						backgroundWallpaper.fullscreen?.navbar?.transparentMode ||
 						"semifull";
-<<<<<<< HEAD
 					return fs === "semifull" ? "semifull" : "semi";
-=======
-					return fs === "semifull" && isHomePageCheck ? "semifull" : "semi";
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 				})()
 			: "semi";
 
@@ -145,11 +141,7 @@ const logoVariants = await Promise.all(
         let mode;
         let blur;
         if (wm === "fullscreen") {
-<<<<<<< HEAD
           mode = fsTMode === "semifull" ? "semifull" : "semi";
-=======
-          mode = fsTMode === "semifull" && isHome ? "semifull" : "semi";
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
           blur = fsBlur;
         } else if (wm === "banner") {
           mode = bannerTMode === "semifull" && !isHome ? "semi" : bannerTMode;
@@ -172,11 +164,7 @@ const logoVariants = await Promise.all(
                 <div class:list={[
                     "flex flex-row items-center text-md",
                     siteConfig.navbar.followTheme ? "text-(--primary)" : "dark:text-white text-black"
-<<<<<<< HEAD
-                ]} style="font-family: var(--font-navbar-title, inherit); -webkit-font-smoothing: none">
-=======
-                ]} style="font-family: var(--font-navbar-title, inherit)">
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
+         ]} style="font-family: var(--font-navbar-title, inherit); -webkit-font-smoothing: none">
                                     {logoConfig?.type === "icon" ? (
                                         <Icon name={logoConfig.value || "material-symbols:home-pin-outline"} class="navbar-logo text-[1.75rem] mb-1 mr-2" />
                                     ) : logoIsImage && logoVariants.length > 0 ? (

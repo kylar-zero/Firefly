@@ -167,11 +167,7 @@ function handleError(e: Event) {
 
     <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
     <div class="absolute bottom-0 left-0 right-0 p-3">
-<<<<<<< HEAD
       <h3 class="font-bold text-2xl text-white line-clamp-2 drop-shadow-lg">{title}</h3>
-=======
-      <h3 class="font-bold text-sm text-white line-clamp-2 drop-shadow-lg">{title}</h3>
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
       {#if altTitle}
         <p class="text-xs text-white/60 mt-0.5 line-clamp-1">{altTitle}</p>
       {/if}

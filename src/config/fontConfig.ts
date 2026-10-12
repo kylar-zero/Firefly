@@ -27,7 +27,6 @@ import type { FontDefinition, FontSelectionConfig } from "@/types/fontConfig";
 // 适用于 Astro Font API 的字体配置，支持自动下载、缓存和优化加载
 // 本地开发调试的情况下，修改后需要每次重启开发服务器才能生效
 export const fontsList: FontDefinition[] = [
-<<<<<<< HEAD
 {
   name: "Zen Maru Gothic",
   cssVariable: "--font-zen-maru-gothic",
@@ -81,44 +80,6 @@ export const fontsList: FontDefinition[] = [
 		},
 		fallbacks: ["sans-serif"],
 	},
-=======
-	{
-		name: "Zen Maru Gothic",
-		cssVariable: "--font-zen-maru-gothic",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: ["sans-serif"],
-	},
-	{
-		name: "Inter",
-		cssVariable: "--font-inter",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: ["sans-serif"],
-	},
-	{
-		name: "JetBrains Mono",
-		cssVariable: "--font-jetbrains-mono",
-		provider: "fontsource",
-		weights: ["400", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: [
-			"ui-monospace",
-			"SFMono-Regular",
-			"Menlo",
-			"Monaco",
-			"Consolas",
-			"Liberation Mono",
-			"Courier New",
-			"monospace",
-		],
-	},
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	// ─── 本地字体示例 ───
 	// 使用步骤：
 	// 1. 将 TTF/OTF/WOFF2 字体文件放在 public/assets/fonts/ 目录下
@@ -145,16 +106,11 @@ export const fontConfig: FontSelectionConfig = {
 	enable: true,
 	// 当前选择的字体 CSS 变量名（对应上方 fonts 中的 cssVariable）
 	// 使用 "system" 表示系统字体（不加载任何自定义字体）
-<<<<<<< HEAD
 	selected: ["--font-fusion-pixel"],
-=======
-	selected: ["system"],
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 
 	// 各区域独立字体设置（填写上方 fonts 中的 cssVariable，留空则使用全局 selected 字体）
 	// 例如：bannerTitleFont: "--font-inter", 表示主页横幅主标题使用 Inter 字体
 	// 主页横幅主标题字体
-<<<<<<< HEAD
 	bannerTitleFont: "--font-fusion-pixel",
 	// 主页横幅副标题字体
 	bannerSubtitleFont: "--font-fusion-pixel",
@@ -162,26 +118,16 @@ export const fontConfig: FontSelectionConfig = {
 	navbarTitleFont: "--font-fusion-pixel",
 	// 文章正文标题字体（h1-h6）
 	headingFont: "--font-fusion-pixel",
-=======
-	bannerTitleFont: "--font-zen-maru-gothic",
-	// 主页横幅副标题字体
-	bannerSubtitleFont: "--font-inter",
-	// 导航栏标题字体
-	navbarTitleFont: "",
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	// 代码块字体（用于代码高亮和等宽字体场景）
 	codeFont: "--font-jetbrains-mono",
 
 	// 本地字体子集化配置（构建时由 scripts/subset-fonts.ts 处理）
 	// key 为 fonts 数组中对应的 cssVariable，value 为子集化选项
 	subsetFonts: {
-<<<<<<< HEAD
 		"--font-fusion-pixel": {
 			// 额外包含的字符（覆盖评论等动态内容中可能出现的字符）
 			extraChars: "",
 		},
-=======
->>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		"--font-greatvibes": {
 			// 额外包含的字符
 			extraChars: "",
