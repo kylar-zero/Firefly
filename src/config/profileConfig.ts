@@ -6,6 +6,7 @@ export const profileConfig: ProfileConfig = {
 	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
 	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
 	// 3. 远程 URL："https://example.com/avatar.jpg"
+<<<<<<< HEAD
 	avatar: "assets/images/myprofile.png",
 
 	// 名字
@@ -13,6 +14,15 @@ export const profileConfig: ProfileConfig = {
 
 	// 个人签名
 	bio: "To those who don't care about your tears, just pee on them!",
+=======
+	avatar: "assets/images/avatar.avif",
+
+	// 名字
+	name: "XiaYe",
+
+	// 个人签名
+	bio: "Hello, I'm XiaYe.",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons

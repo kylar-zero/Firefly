@@ -42,6 +42,7 @@ const pages = resolvePageToggles({
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
+<<<<<<< HEAD
 	title: "kylar-zero",
 
 	// 站点副标题
@@ -57,6 +58,23 @@ export const siteConfig: SiteConfig = {
 	// 站点关键词
 	keywords: [
 		"kylar-zero",
+=======
+	title: "Firefly",
+
+	// 站点副标题
+	subtitle: "Demo site",
+
+	// 站点 URL
+	site_url: "https://firefly.cuteleaf.cn",
+
+	// 站点描述
+	description:
+		"Firefly 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。",
+
+	// 站点关键词
+	keywords: [
+		"Firefly",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		"Fuwari",
 		"Astro",
 		"ACGN",
@@ -68,9 +86,15 @@ export const siteConfig: SiteConfig = {
 	// 主题色
 	themeColor: {
 		// 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+<<<<<<< HEAD
 		hue: 352,
 		// 默认模式："light" 亮色，"dark" 暗色，"system" 跟随系统
 		defaultMode: "dark",
+=======
+		hue: 165,
+		// 默认模式："light" 亮色，"dark" 暗色，"system" 跟随系统
+		defaultMode: "system",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	},
 
 	// 页面整体宽度（单位：rem）
@@ -81,9 +105,15 @@ export const siteConfig: SiteConfig = {
 	// 网站Card样式配置
 	card: {
 		// 是否开启卡片边框和阴影，开启后让网站更有立体感
+<<<<<<< HEAD
 		border: true,
 		// 是否让卡片风格跟随主题色相
 		followTheme: true,
+=======
+		border: false,
+		// 是否让卡片风格跟随主题色相
+		followTheme: false,
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	},
 
 	// Favicon 配置
@@ -117,7 +147,11 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
+<<<<<<< HEAD
 		title: "kylar's Blog",
+=======
+		title: "Firefly Blog",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
@@ -132,7 +166,11 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// 站点开始日期，用于统计运行天数
+<<<<<<< HEAD
 	siteStartDate: "2026-10-11",
+=======
+	siteStartDate: "2025-01-01",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 
 	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
@@ -262,7 +300,11 @@ export const siteConfig: SiteConfig = {
 	// ── Bilibili配置 ──────────────────────────────────
 	bilibili: {
 		// 你的 Bilibili 用户 UID
+<<<<<<< HEAD
 		uid: "已失联",
+=======
+		uid: "38932988",
+>>>>>>> 91cbbefe53716e70b77ca9c41e27af10f5b27cab
 	},
 
 	// ── 番组计划bangumi配置 ──────────────────────────────────
